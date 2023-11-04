@@ -1,0 +1,139 @@
+/* 변수 */
+:root {
+  --base-width: 502px;
+  --base-height: 310px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* 레이아웃 */
+.card-link-wide,
+.card-link-normal {
+  width: var(--base-width);
+  height: var(--base-height);
+  margin: 0 auto;
+}
+
+/* 꿀생강차 */
+.card-link-wide {
+  background: white;
+  border: 1px solid #C4C4C4;
+  position: relative;
+}
+
+.ginger-tea .logo {
+  position: absolute;
+  height: 75px;
+  top: 75px;
+  left: 90px;
+}
+
+.ginger-tea .description {
+  position: absolute;
+  margin-top: 8px;
+  top: 155px;
+  left: 60px;
+  font-size: 24px;
+  color: #4E4E4E;
+}
+
+.ginger-tea .goods {
+  position: absolute;
+  top: 23px;
+  left: 230px;
+  width: 265px;
+
+}
+
+.ginger-tea .menu {
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  padding: 0;
+  border: 0;
+  height: 42px;
+}
+
+.normal-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-link-normal {
+  width: 243px;
+  background: white;
+  border: 1px solid #C4C4C4;
+  margin: 12px 7px;
+  position: relative;
+}
+
+/* 핸드크림 */
+.hand-cream .logo {
+  position: absolute;
+  top: 20px;
+  left: 67px;
+  width: 114px;
+}
+
+.hand-cream .description {
+  position: absolute;
+  margin-top: 20px;
+  top: 53px;
+  left: 75px;
+  font-size: 18px;
+  color: #555;
+}
+
+.hand-cream .goods {
+  position: absolute;
+  top: 105px;
+  left: 25px;
+  width: 190px;
+}
+
+.purchase {
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  z-index: 1;
+  padding: 10px 15px;
+  background: #0074E9;
+  color: #fff;
+  border: 1px solid #0074E9;
+}
+
+/* 보리차 */
+.barley-tea .logo {
+  position: absolute;
+  top: 20px;
+  left: 62px;
+  width: 114px;
+}
+
+.barley-tea .description {
+  position: absolute;
+  margin-top: 20px;
+  top: 40px;
+  left: 70px;
+  font-size: 18px;
+  color: #555;
+}
+
+.barley-tea .goods {
+  position: absolute;
+  top: 105px;
+  left: 25px;
+  width: 190px;
+}
+
+.barley-tea .menu {
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  padding: 0;
+  border: 0;
+  height: 42px;
+  z-index: 1;
+}
