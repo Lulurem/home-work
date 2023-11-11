@@ -1,0 +1,201 @@
+@import "./reset.css";
+
+.header {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  gap: 6.578px;
+  margin-right: 173px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 7.5px;
+  color: #24388D;
+}
+
+.login {
+  width: 100vw;
+  height: 95vh;
+  background-image: url(images/login-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-area {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: #fefefe;
+  padding-top: 100px;
+}
+
+.login-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+
+  & :nth-child(1) {
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  & :nth-child(2) {
+    font-size: 18px;
+  }
+
+  & :nth-child(3) {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fefefe;
+    color: #fefefe;
+
+  }
+}
+
+.email-input,
+.pwd-input {
+  position: relative;
+
+  & img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+  }
+}
+
+.form-message {
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+.email-label,
+.pwd-label,
+.form-message,
+.email-input img,
+.pwd-input img {
+  font-size: 13px;
+  visibility: hidden;
+}
+
+.save-email {
+  display: flex;
+  margin-bottom: 45px;
+
+  & img {
+    width: 16px;
+    height: 16px;
+  }
+
+  & span {
+    font-size: 13px;
+    margin-left: 3px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-container button {
+  width: 250px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #fefefe;
+  font-size: 18px;
+}
+
+.button-container img {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  z-index: 1;
+}
+
+.login-button {
+  color: #24388D;
+}
+
+.signin-button {
+  background: transparent;
+  color: #fefefe;
+}
+
+
+@media (min-width:600px) and (max-width:780px) {
+  .header {
+    height: 7vh;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .logo a {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .header {
+    width: 599px;
+    margin: 0 25px;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    visibility: hidden;
+  }
+
+  .login-area {
+    width: 311px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-container button {
+    width: 311px;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+/* # 예시 # 폼 요소(input이나 button 등)의 컨테이닝 블록(상위 부모 요소)에 # is--invalid,
+is--valid 등 동적으로 클래스가 추가되는 상황일 경우 예시  */
+.is--invalid .form-message {
+  .form-message {
+    visibility: visible;
+  }
+}
+
+.is--valid .button-password {}
+
+.is--visible .button-password {}
+
+.is--focus .pwd-input:focus {
+  .pwd-label {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIYA COFFEE</title>
+    <link rel="stylesheet" href="./mission-02.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">
+        <a href="/">
+          <img src="./images/ediya.png" />
+          <img src="./images/coffee.png" />
+        </a>
+      </h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="/">이디야 디자인</a></li>
+          <li>
+            <b><a href="/">로그인</a></b>
+          </li>
+          <li><a href="/">회원가입</a></li>
+          <li><a href="/">이디야 음료</a></li>
+          <li><a href="/">이디야 뉴스</a></li>
+          <li><a href="/">매장찾기</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="login">
+      <div class="login-area">
+        <div class="login-description">
+          <span>로그인</span>
+          <span>Welcome, Ediya Coffee</span>
+          <span>이디야커피에 오신 것을 환영합니다.</span>
+        </div>
+        <form class="login-form" method="get">
+          <div class="email-form">
+            <label for="Email" class="email-label">이메일</label>
+            <div class="email-input">
+              <input id="Email" placeholder="user@domain.io" required />
+              <img src="./images/valid.png" alt="이메일 유효" />
+              <img src="./images/invalid.png" alt="이메일 무효" />
+            </div>
+            <div class="form-message">
+              <span
+                >이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</span
+              >
+            </div>
+          </div>
+          <div class="pwd-form">
+            <label for="Pwd" class="pwd-label">패스워드</label>
+            <div class="pwd-input">
+              <input
+                id="Pwd"
+                class="pwd-input"
+                placeholder="숫자, 영어 조합 6자 이상"
+                required
+              />
+              <img src="./images/pwd-eye.png" alt="패스워드 숨김" />
+              <img src="./images/pwd-noneye.png" alt="패스워드 보임" />
+              <img src="./images/invalid.png" alt="패스워드 무효" />
+            </div>
+            <div class="form-message">
+              <span>
+                패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.
+              </span>
+            </div>
+          </div>
+          <div class="save-email">
+            <img src="./images/uncheck.png" alt="이메일 저장 체크" />
+            <span>이메일 저장</span>
+          </div>
+        </form>
+        <div class="button-container">
+          <button class="login-button">
+            로그인<img src="./images/arrow.svg" />
+          </button>
+          <button class="signin-button">
+            회원가입<img src="./images/arrow-white.svg" />
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
