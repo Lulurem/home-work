@@ -68,47 +68,34 @@
     border: none;
     border-bottom: 1px solid #fefefe;
     color: #fefefe;
-
   }
 }
 
-.email-input,
-.pwd-input {
-  position: relative;
-
-  & img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-  }
-}
-
-.form-message {
+.email-message,
+.pwd-message {
   margin-top: 1px;
   margin-left: 10px;
-}
-
-.email-label,
-.pwd-label,
-.form-message,
-.email-input img,
-.pwd-input img {
   font-size: 13px;
   visibility: hidden;
+}
+
+.email-message.is--invalid,
+.pwd-message.is--invalid {
+  visibility: visible;
 }
 
 .save-email {
   display: flex;
   margin-bottom: 45px;
 
-  & img {
+  & input {
     width: 16px;
     height: 16px;
   }
 
   & span {
     font-size: 13px;
+    margin-top: 2px;
     margin-left: 3px;
   }
 }
@@ -177,25 +164,5 @@
   .button-container button {
     width: 311px;
     margin-bottom: 15px;
-  }
-}
-
-
-
-/* # 예시 # 폼 요소(input이나 button 등)의 컨테이닝 블록(상위 부모 요소)에 # is--invalid,
-is--valid 등 동적으로 클래스가 추가되는 상황일 경우 예시  */
-.is--invalid .form-message {
-  .form-message {
-    visibility: visible;
-  }
-}
-
-.is--valid .button-password {}
-
-.is--visible .button-password {}
-
-.is--focus .pwd-input:focus {
-  .pwd-label {
-    visibility: visible;
   }
 }

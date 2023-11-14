@@ -61,3 +61,40 @@
 <br>
 
 - [x] button 내부의 화살표 위치를 오른쪽으로 옮겨서 정렬하고 싶은데 방법을 모르겠음 😩
+
+<br>
+
+## 11/13 피드백 수정
+
+<br>
+
+- 에러메시지와 입력서식의 연관성을 알 수 없음
+
+<img src="./images/README/edit-form.png" width="500"/>
+
+<br>
+
+- [x] 에러 메시지에 대한 설명 추가
+
+<br>
+
+- 체크박스를 이미지로 마크업 함
+
+<img src="./images/README/edit-check.png" width="500"/>
+
+<br>
+
+- [x] input 태그로 변경 후 type 지정
+
+<br>
+
+<img src="./images/README/edit-login-invalid.png" width="500"/>
+
+<br>
+
+- [x] is--invalid 클래스 추가시 메시지 출력
+
+<br>
+
+- 패스워드 보기/감추기를 이미지로 마크업 함
+  - [ ] 해결 실패 ! ☺️
