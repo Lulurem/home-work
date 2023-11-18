@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDIYA COFFEE</title>
     <link rel="stylesheet" href="./mission-02.css" />
-    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -44,7 +43,7 @@
               placeholder="user@domain.io"
               required
             />
-            <div class="email-message" alt="유효성 검증 메세지">
+            <div class="email-message">
               <span>
                 이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)
               </span>
@@ -58,15 +57,15 @@
               placeholder="숫자, 영어 조합 6자 이상"
               required
             />
-            <div class="pwd-message" alt="유효성 검증 메세지">
+            <div class="pwd-message">
               <span>
                 패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.
               </span>
             </div>
           </div>
           <div class="save-email">
-            <input type="checkbox" name="이메일 저장" id="saveEmail" />
-            <span id="saveEmail">이메일 저장</span>
+            <input type="checkbox" name="saveEmail" id="saveEmail" />
+            <label for="saveEmail">이메일 저장</label>
           </div>
         </form>
         <div class="button-container">
